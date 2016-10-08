@@ -1,0 +1,119 @@
+.banner{
+	background-image:url('../images/pic35.jpg');
+	background-repeat:no-repeat;
+	width:1320px;
+	height:1110px;
+	position: relative;
+	top:-50px;
+	margin-left:15px;
+	padding:0px;
+	
+    /*background-attachment: fixed;*/
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+ }
+ .navbar-nav ul{
+ margin-left: 30px;
+ }
+.navbar-nav >li>a{
+ 	color:#5CDADA;
+ 	font-family:'Bungee Shade',Arial serif;
+font-size: 30px;
+background-color:#302E2A   ;}
+.navbar-nav li a:hover{
+	background-color:#7D8BCF  ;
+}
+
+ .jj{
+ 	color:white;
+ top:180px;
+margin-left:630px;
+position:absolute;
+font-size:475%;
+
+font-weight: normal;
+font-family: 'Rancho',cursive;}
+.bud{
+	font-family: 'Montez',Arial, serif;
+font-size: 500%;
+color:white;
+margin-left:645px;
+top:585px;
+position: absolute;}
+.rw-wrapper{
+	width: 80%;
+	position:absolute;
+   top:5000px;
+	margin-left:250px;
+	font-family:'Bree Serif';
+	padding:10px;
+}
+
+.rw-sentence{
+	margin: 0;
+	text-align: left;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.rw-sentence span{
+	color: #444;
+	white-space: nowrap;
+	font-size: 200%;
+	font-weight: normal;
+}
+
+.rw-words{
+	display: inline;
+	text-indent: 10px;
+}
+.rw-words span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+	color: #6b969d;
+}
+.rw-words-1 span{
+	animation: rotateWordsFirst 18s linear infinite 0s;
+}
+.rw-words-2 span{
+	animation: rotateWordsSecond 18s linear infinite 0s;
+}
+.rw-words span:nth-child(2) { 
+	animation-delay: 3s; 
+	color: #6b889d;
+}
+.rw-words span:nth-child(3) { 
+	animation-delay: 6s; 
+	color: #6b739d;	
+}
+.rw-words span:nth-child(4) { 
+	animation-delay: 9s; 
+	color: #7a6b9d;
+}
+.rw-words span:nth-child(5) { 
+	animation-delay: 12s; 
+	color: #8d6b9d;
+}
+.rw-words span:nth-child(6) {  
+	animation-delay: 15s; 
+	color: #9b6b9d;
+}
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWordsSecond {
+    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+    10% { opacity: 0.3; width: 0px; }
+	20% { opacity: 1; width: 100%; }
+    27% { opacity: 0; width: 100%; }
+    100% { opacity: 0; }
+}
